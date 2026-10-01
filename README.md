@@ -1,6 +1,6 @@
-# PCE
+# Expensify
 
-PCE is a full-stack shopping and budget management application built to help users track purchase items, manage a spending limit, and monitor savings or overspend in a simple, responsive dashboard.
+Expensify is a full-stack shopping and budget management application built to help users track purchase items, manage a spending limit, and monitor savings or overspend in a simple, responsive dashboard.
 
 The project combines a React frontend with an Express API and MongoDB persistence, making it a practical example of a production-style personal finance workflow with realistic deployment and resilience patterns.
 
