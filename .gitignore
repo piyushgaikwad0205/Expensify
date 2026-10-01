@@ -1,4 +1,3 @@
 .env
-/client 
 /node_modules
 # client becuase of Testing going on Client ( push backend becuase it's fully ready)

@@ -1,0 +1,20 @@
+apiVersion: chaos-mesh.org/v1alpha1
+kind: StressChaos
+metadata:
+  name: cpu-memory-stress
+  namespace: default
+spec:
+  mode: all
+  selector:
+    namespaces:
+      - default
+    labelSelectors:
+      app: pce-server
+  stressors:
+    cpu:
+      workers: 2
+      load: 85
+    memory:
+      workers: 1
+      size: '128MB'
+  duration: '5m'

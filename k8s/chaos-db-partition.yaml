@@ -1,0 +1,22 @@
+apiVersion: chaos-mesh.org/v1alpha1
+kind: NetworkChaos
+metadata:
+  name: db-partition-chaos
+  namespace: default
+spec:
+  action: partition
+  mode: all
+  selector:
+    namespaces:
+      - default
+    labelSelectors:
+      app: pce-server
+  target:
+    selector:
+      namespaces:
+        - default
+      labelSelectors:
+        app: mongodb
+    mode: all
+  direction: both
+  duration: '5m'
